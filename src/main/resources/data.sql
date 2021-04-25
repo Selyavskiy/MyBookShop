@@ -1,30 +1,3 @@
-insert into authors (id, nameAuthor) values (1, 'Drucie Goodbourn');
-insert into authors (id, nameAuthor) values (2, 'Marcia Aggiss');
-insert into authors (id, nameAuthor) values (3, 'Giovanni Bigg');
-insert into authors (id, nameAuthor) values (4, 'Duffie Eynon');
-insert into authors (id, nameAuthor) values (5, 'Anselma McKennan');
-insert into authors (id, nameAuthor) values (6, 'Gert Kira');
-insert into authors (id, nameAuthor) values (7, 'Clerc Djakovic');
-insert into authors (id, nameAuthor) values (8, 'Stacee Elsy');
-insert into authors (id, nameAuthor) values (9, 'Dorotea Bonhill');
-insert into authors (id, nameAuthor) values (10, 'Minni Bunney');
-insert into authors (id, nameAuthor) values (11, 'Berty Gandley');
-insert into authors (id, nameAuthor) values (12, 'Raynard Tesdale');
-insert into authors (id, nameAuthor) values (13, 'Joanna Hutfield');
-insert into authors (id, nameAuthor) values (14, 'Dannie Glidder');
-insert into authors (id, nameAuthor) values (15, 'Timmie Adshede');
-insert into authors (id, nameAuthor) values (16, 'Fernando Neads');
-insert into authors (id, nameAuthor) values (17, 'Teddy Guilliland');
-insert into authors (id, nameAuthor) values (18, 'Paloma Grebert');
-insert into authors (id, nameAuthor) values (19, 'Kristos Usher');
-insert into authors (id, nameAuthor) values (20, 'Darcey Rohmer');
-insert into authors (id, nameAuthor) values (21, 'Cristie Isacsson');
-insert into authors (id, nameAuthor) values (22, 'Lindsay Coutthart');
-insert into authors (id, nameAuthor) values (23, 'Helyn Schneidar');
-insert into authors (id, nameAuthor) values (24, 'Bette-ann Askem');
-insert into authors (id, nameAuthor) values (25, 'Dom Robuchon');
-
-
 insert into books (author, title, priceOld, price) values (1, 'exploit real-time e-commerce', '$203.23', '$43.37');
 insert into books (author, title, priceOld, price) values (2, 'utilize real-time interfaces', '$260.31', '$35.96');
 insert into books (author, title, priceOld, price) values (3, 'extend strategic e-services', '$272.00', '$151.04');
@@ -50,7 +23,3 @@ insert into books (author, title, priceOld, price) values (22, 'implement user-c
 insert into books (author, title, priceOld, price) values (23, 'utilize magnetic supply-chains', '$279.70', '$77.86');
 insert into books (author, title, priceOld, price) values (24, 'e-enable dot-com supply-chains', '$297.83', '$110.15');
 insert into books (author, title, priceOld, price) values (25, 'facilitate efficient eyeballs', '$232.30', '$131.48');
-
-
-
-

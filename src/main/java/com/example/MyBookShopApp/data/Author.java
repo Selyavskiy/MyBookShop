@@ -4,13 +4,20 @@ package com.example.MyBookShopApp.data;
 public class Author {
 
     private Integer id;
-    private String nameAuthor;
+    private String firstName;
+    private String lastName;
+
+
+
+    public Author() {
+    }
 
     @Override
     public String toString() {
         return "Author{" +
                 "id=" + id +
-                ", nameAuthor='" + nameAuthor + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 '}';
     }
 
@@ -22,11 +29,19 @@ public class Author {
         this.id = id;
     }
 
-    public String getNameAuthor() {
-        return nameAuthor;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setNameAuthor(String nameAuthor) {
-        this.nameAuthor = nameAuthor;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }

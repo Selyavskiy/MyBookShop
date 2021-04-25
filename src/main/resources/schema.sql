@@ -3,7 +3,14 @@ DROP TABLE IF EXISTS authors;
 
 CREATE TABLE authors(
 id INT UNIQUE,
-nameAuthor VARCHAR(250) UNIQUE,
+first_name VARCHAR(250),
+last_name VARCHAR(250),
+);
+
+CREATE TABLE tags(
+id INT UNIQUE,
+tag VARCHAR(250),
+tag_type int
 );
 
 CREATE TABLE  books(
@@ -11,6 +18,5 @@ id INT AUTO_INCREMENT PRIMARY KEY,
 author INT NOT NULL,
 title VARCHAR(250) NOT NULL,
 priceOld  VARCHAR(250) DEFAULT NULL,
-price VARCHAR(250) DEFAULT NULL,
-FOREIGN KEY (author) REFERENCES authors(id)
+price VARCHAR(250) DEFAULT NULL
 );
