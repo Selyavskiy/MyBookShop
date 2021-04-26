@@ -99,7 +99,7 @@
                     <li class="menu-item">
                         <span th:text="#{footbar.lang}">Выбор языка</span>
                         <select id="locales">
-                            <option value=" "></option>
+                            <option value=" " selected disabled th:text="${#httpServletRequest.getParameter('lang')} == 'ru' ? 'Выбран: Русский' : 'Choose: English'"></option>
                             <option value="en">English</option>
                             <option value="ru">Русский</option>
                         </select>
