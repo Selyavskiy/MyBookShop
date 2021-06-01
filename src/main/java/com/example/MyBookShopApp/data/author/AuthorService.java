@@ -1,10 +1,10 @@
-package com.example.MyBookShopApp.data;
+package com.example.MyBookShopApp.data.author;
 
+import com.example.MyBookShopApp.data.author.Author;
+import com.example.MyBookShopApp.data.author.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
-import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -13,23 +13,17 @@ import java.util.Map;
 @Service
 public class AuthorService {
 
-    private JdbcTemplate jdbcTemplate;
+    private AuthorRepository authorRepository;
 
     @Autowired
-    public AuthorService(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
+    public AuthorService(AuthorRepository authorRepository) {
+        this.authorRepository = authorRepository;
     }
+
 
     public List<Author> getAuthorsData(){
 
-        List<Author> authors = jdbcTemplate.query("SELECT * FROM authors", (ResultSet rs, int rowNum) -> {
-            Author author = new Author();
-            author.setId(rs.getInt("id"));
-            author.setFirstName(rs.getString("first_name"));
-            author.setLastName(rs.getString("last_name"));
-            return author;
-        });
-        return new ArrayList<Author>(authors);
+        return authorRepository.findAll();
     }
 
 

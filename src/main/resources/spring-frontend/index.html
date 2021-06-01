@@ -69,16 +69,16 @@
         </h2>
         <div class="Tags" id="tags">
 
-          <th:block  th:each="tag, iStat : ${tagsList}" th:switch="${tag[1]}">
-            <div th:case="1" class="Tag"><a href="/tags/index.html" th:text="${tag[0]} + ' '">современная литература</a>
+          <th:block  th:each="tag : ${tagsList}" th:switch="${tag.tagType}">
+            <div th:case="1" class="Tag"><a href="/tags/index.html" th:text="${tag.tag} + ' '">современная литература</a>
             </div>
-            <div th:case="2" class="Tag Tag_lg"><a href="/tags/index.html" th:text="${tag[0]} + ' '">современная литература</a>
+            <div th:case="2" class="Tag Tag_lg"><a href="/tags/index.html" th:text="${tag.tag} + ' '">современная литература</a>
             </div>
-            <div th:case="3" class="Tag Tag_md"><a href="/tags/index.html" th:text="${tag[0]} + ' '">современная литература</a>
+            <div th:case="3" class="Tag Tag_md"><a href="/tags/index.html" th:text="${tag.tag} + ' '">современная литература</a>
             </div>
-            <div th:case="4" class="Tag Tag_sm"><a href="/tags/index.html" th:text="${tag[0]} + ' '">современная литература</a>
+            <div th:case="4" class="Tag Tag_sm"><a href="/tags/index.html" th:text="${tag.tag} + ' '">современная литература</a>
             </div>
-            <div th:case="5" class="Tag Tag_xs"><a href="/tags/index.html" th:text="${tag[0]} + ' '">современная литература</a>
+            <div th:case="5" class="Tag Tag_xs"><a href="/tags/index.html" th:text="${tag.tag} + ' '">современная литература</a>
             </div>
           </th:block>
 
