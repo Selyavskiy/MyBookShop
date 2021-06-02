@@ -3,6 +3,7 @@ package com.example.MyBookShopApp.data.book;
 import com.example.MyBookShopApp.data.support.BalanceTransaction;
 import com.example.MyBookShopApp.data.support.Genre;
 import com.example.MyBookShopApp.data.author.Author;
+import com.example.MyBookShopApp.data.support.GenreEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
@@ -45,8 +46,7 @@ public class Book {
     @JoinColumn(name = "author_id", referencedColumnName = "id")
     private Author author;
 
-    @OneToOne
-    private Genre bookGenre;
+    private GenreEnum bookGenre;
 
     @OneToOne
     private BalanceTransaction balanceTransaction;
@@ -170,11 +170,11 @@ public class Book {
         this.reviewList = reviewList;
     }
 
-    public Genre getBookGenre() {
+    public GenreEnum getBookGenre() {
         return bookGenre;
     }
 
-    public void setBookGenre(Genre bookGenre) {
+    public void setBookGenre(GenreEnum bookGenre) {
         this.bookGenre = bookGenre;
     }
 
